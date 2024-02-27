@@ -17,7 +17,11 @@ console.log(i18n.greetings.hello);
 
       <h1>{{ $translate('greetings.hello') }}</h1>
 
-      <fancy-button>
+      <fancy-button v-tooltip="{
+        content: $translate('greetings.hello'),
+        placement: 'top',
+        zIndex: 1100
+      }">
         {{ $translate('greetings.hello') }}
       </fancy-button>
     </div>
