@@ -16,6 +16,10 @@ console.log(i18n.greetings.hello);
       <HelloWorld msg="You did it!" />
 
       <h1>{{ $translate('greetings.hello') }}</h1>
+
+      <fancy-button>
+        {{ $translate('greetings.hello') }}
+      </fancy-button>
     </div>
   </header>
 
